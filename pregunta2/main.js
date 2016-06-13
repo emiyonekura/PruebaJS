@@ -1,15 +1,5 @@
-var suma = 0;
-
-do {
-
-	var valor = prompt("ingresa un número");
-	if (!isNaN(valor)){
-
-	suma = suma + parseInt(valor);
-	}
+function copiar(object){
+	var object2 = object;
+	return object2;
 }
 
-while (valor != "fin");
-	
-
-console.log(suma)

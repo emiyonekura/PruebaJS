@@ -1,13 +1,7 @@
-var array = [1,2,3,4,"shgd",6];
+var	alumno1	=	{nombre:	"Matías",	edad:5}
+var	alumno2	=	alumno1
+alumno2.nombre	=	"Sebastián"
 
-function suma(array){
-	var resultado = 0;
-
- for (var i = 0; i < array.length; i++) {
- 	if (!isNaN(array[i]) == true) {
- 		resultado = resultado + array[i];	
- 	} 
- 
- }
- return resultado;
-}
+//El problema es que se está creando la variable alumno2 como copia de alumno1 y
+//al asignar un nuevo nombre a alumno2, también cambia el valor
+//del nombre de alumno1, quedando los dos como "Sebastián"
